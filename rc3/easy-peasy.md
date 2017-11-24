@@ -14,6 +14,6 @@ There are 3 variables on the stack. Starting at esp+0x18, esp+0x28 and esp+0x2c.
 
 The 2 other variables are set to 0 at the beginning of the function. However, each of these variables is compared to a different value than 0. The second variable on the stack is compared to 0xc0ffee. The third variable on the stack is compared to 0xcafef00d. It's not possible for these path branches to be taken, looking at it from the static perspectief. But since we have control over the variable values due to the buffer overflow on the first variable, it's possible to change the values in the last 2 variables on the stack at runtime.
 
-Since the first 16 overflown bytes are located in the buffer at variable 3, and the following 16 bytes in the buffer at variable 2, both values need to be inversed in the payload. Carefully write a payload (for instance, offset 0x28 - offset 0x18 = 16 characters) to overflow the buffer at the first variable, then hardcore the values 0xc0ffee and 0xcafef00d. Keep in mind to write the 32 bits payloads in little endian. 
+Since the first 4 overflown bytes are located in the buffer at variable 3, and the following 4 bytes in the buffer at variable 2, both values need to be inversed in the payload. Carefully write a payload (for instance, offset 0x28 - offset 0x18 = 16 characters) to overflow the buffer at the first variable, then hardcore the values 0xc0ffee and 0xcafef00d. Keep in mind to write the 32 bits payloads in little endian. 
 
 ![](rc3-4.png)
