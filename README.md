@@ -26,6 +26,11 @@ Search the filesystem for files with setuid permissions
 find / -perm /u+s
 ```
 
+Base 64 decode
+```
+echo string | base64 --decode
+```
+
 ### Steganography ###
 
 Returns each string of printable characters in files.
@@ -62,7 +67,6 @@ https://www.jasondavies.com/catmap/
 Get information from public keys.
 ```
 openssl rsa -in pubkey.pem -pubin -text -modulus
-
 ```
 
 Get the decimal value from the hex modulus and factorize p and q via http://factordb.com/.
@@ -71,14 +75,12 @@ Create the private key with p and q (using https://github.com/ius/rsatool).
 
 ```
 python rsatool.py -p p_value -q q_value -f PEM -o privkey.pem
-
 ```
 
 Finally, decrypt the cipher with the private key.
 
 ```
 openssl rsautl -decrypt -inkey privkey.pem -in cipher.txt
-
 ```
 
 
@@ -91,7 +93,6 @@ The tool uses factordb too, but it can't parse scientific notation.
 If the tool fails (because the modulus size is large) use the "manual" way described above.
 ```
 python RsaCtfTool.py --publickey PublicKey.pem --private --uncipher ciphertext.txt
-
 ```
 
 ### MISC
@@ -110,7 +111,6 @@ Extract password hashes to file.
 ```
 zip2john test.zip > zip.hashes
 rar2john test.rar > rar.hashes
-
 ```
 
 Crack the password hash.
@@ -121,7 +121,6 @@ john zip.hashes
 Crack the password using a dictionairy.
 ```
 fcrackzip -u -D -p passwords.txt test.zip
-
 ```
 
 
@@ -130,20 +129,20 @@ fcrackzip -u -D -p passwords.txt test.zip
 Find all the strings in the binary.
 ```
 strings binary
-
 ```
 
 Find all the system calls (write, strcmp, etc) in the binary.
 ```
 strace binary
-
+```
+```
+rabin2 -z binary
 ```
 
 Find all the library calls (glibc etc) in the binary.
 
 ```
 ltrace binary
-
 ```
 
 ### Recon
