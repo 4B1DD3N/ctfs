@@ -145,6 +145,22 @@ Find all the library calls (glibc etc) in the binary.
 ltrace binary
 ```
 
+Patch binary with radare2 (wa?), open file in write mode.
+```
+r2 -w binary
+```
+
+Analyze the binary (symbols, references, etc)
+```
+r2 binary
+aaaa
+```
+
+- List symbols with "afl".
+- Seek to address with "s 0x123"
+- Print dissasembly with "pdf" of "pd 20" for 20 instructions
+- VV (visual graph)
+
 ### Recon
 ```
 1. Check for names (friends, animals, favourite places, etc)
