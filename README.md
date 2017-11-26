@@ -131,6 +131,11 @@ fcrackzip -u -D -p passwords.txt test.zip
 
 ### Reversing
 
+Information about the binary.
+```
+exiftool binary
+```
+
 Find all the strings in the binary.
 ```
 strings binary
