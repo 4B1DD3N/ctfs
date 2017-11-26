@@ -136,6 +136,11 @@ Information about the binary.
 exiftool binary
 ```
 
+Decompress binary packed with UPX.
+```
+upx -d binary
+```
+
 Find all the strings in the binary.
 ```
 strings binary
