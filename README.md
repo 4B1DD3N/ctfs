@@ -2,6 +2,22 @@
 
 ## CTF TOOLS #
 
+### Linux tricks
+
+Redirect stdout to null (also the default, so >/dev/null is also to stdout)
+```
+1>/dev/null 
+```
+
+Redirect stderr to null
+```
+2>/dev/null 
+```
+
+Redirect  stderr and stdout to null
+```
+&>/dev/null 
+```
 
 ### File identification ###
 ```
