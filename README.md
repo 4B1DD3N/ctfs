@@ -208,6 +208,7 @@ aaaa
 - drt (show registers)
 - dr?eax (show eax register)
 - dr eax=0x1 (set eax to 1)
+- iz (show srings, izz for whole binary)
 
 Reopen in debugging mode
 ```
