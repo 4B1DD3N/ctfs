@@ -194,6 +194,41 @@ aaaa
 - Print dissasembly with "pdf" of "pd 20" for 20 instructions
 - VV (visual graph)
 
+Reopen in debugging mode
+```
+doo
+```
+
+Set breakpoint
+```
+db 0x123
+```
+
+Continue debugging
+```
+dc
+```
+
+Single step, but current seeked address does not change.
+```
+ds
+```
+
+Seek to the RIP
+```
+sr rip
+```
+
+Print current dissasembled instruction (pdj for json format)
+```
+pd 1
+```
+
+Load debugging profile (env, args, etc)
+```
+e dbg.profile=profile.rr2
+```
+
 ### Recon
 ```
 1. Check for names (friends, animals, favourite places, etc)
