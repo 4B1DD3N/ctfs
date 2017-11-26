@@ -141,12 +141,14 @@ Find all the strings in the binary.
 strings binary
 ```
 
+Or find all strings in the binary with radate.
+```
+rabin2 -z binary
+```
+
 Find all the system calls (write, strcmp, etc) in the binary.
 ```
 strace binary
-```
-```
-rabin2 -z binary
 ```
 
 Find all the library calls (glibc etc) in the binary.
