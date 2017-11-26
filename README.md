@@ -15,6 +15,11 @@ http://mark0.net/soft-trid-e.html
 
 ### Handy oneliners ###
 
+Find string with regex expression recursively.
+```
+grep -RoP "SOME_CTF{.*?}" .
+```
+
 
 Search through all files in the filesystem looking for the sequence `fit{`
 ```
