@@ -193,6 +193,21 @@ aaaa
 - Seek to address with "s 0x123"
 - Print dissasembly with "pdf" of "pd 20" for 20 instructions
 - VV (visual graph)
+- pdf~sub (search all sub instructions)
+- pdf~.. (show pdf with GNU less)
+- S (show sections)
+- iS
+- V (p for more, q for quit)
+- V!
+- dcu 0x123 (continue until address)
+- dcu entry0
+- drr (every register and what they are pointing to)
+- pxr @ rsp (get info about the stack)
+- dmh (heap analyse)
+- pdf@main~call (print all the function calls to glibc)
+- drt (show registers)
+- dr?eax (show eax register)
+- dr eax=0x1 (set eax to 1)
 
 Reopen in debugging mode
 ```
