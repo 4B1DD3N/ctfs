@@ -1,7 +1,7 @@
 # CTFS
 
 ```
-'0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_+!{}'
+0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_+!{}
 ```
 
 ## CTF TOOLS #
