@@ -1,5 +1,9 @@
 # CTFS
 
+```
+'0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_+!{}'
+```
+
 ## CTF TOOLS #
 
 ### Linux tricks
