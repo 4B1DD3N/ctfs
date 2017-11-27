@@ -210,7 +210,8 @@ aaaa
 - dr eax=0x1 (set eax to 1)
 - iz (show srings, izz for whole binary)
 - dr eip=0x123 (set next executed instruction at 0x123)
-
+- dr (show registers)
+- doo AAA (reopen in debug mode with AAA argument)
 Reopen in debugging mode
 ```
 doo
