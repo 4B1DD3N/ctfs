@@ -280,3 +280,11 @@ e dbg.profile=profile.rr2
 </root>
 ```
 
+### Java
+
+Decompile java bytecode.
+
+```
+jad -p DecompileMe.class
+```
+
