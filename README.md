@@ -282,9 +282,16 @@ e dbg.profile=profile.rr2
 
 ### Java
 
-Decompile java bytecode.
+Decompile java bytecode (.java).
 
 ```
 jad -p DecompileMe.class
 ```
 
+### Python
+
+Decompile python bytecode (.pyc). https://github.com/Mysterie/uncompyle2
+
+```
+uncompyle6 crackme3.pyc
+```
