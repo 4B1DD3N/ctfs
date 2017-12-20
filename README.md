@@ -304,12 +304,24 @@ uncompyle6 crackme3.pyc
 ### Forensics
 
 #### Memory dumps
+Show generic info about the memory dump.
 ```
 volatility -f dump.elf imageinfo
 ```
 
+Dump all the passwords.
 ```
 volatility -f dump.elf --profile=WINXPSP2x86 hashdump
+```
+
+Check the running processes.
+```
+volatility -f dump2.elf --profile=WinXPSP2x86 pstree
+```
+
+Show more info about a process (for instance the content of a notepad document).
+```
+volatility -f dump2.elf --profile=WinXPSP2x86 notepad
 ```
 
 ### Cracking
