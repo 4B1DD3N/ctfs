@@ -324,6 +324,11 @@ Show more info about a process (for instance the content of a notepad document).
 volatility -f dump2.elf --profile=WinXPSP2x86 notepad
 ```
 
+Dump a process by PID (408).
+```
+volatility -f dump2.elf --profile=WinXPSP2x86 memdump -D . -p 408
+```
+
 ### Cracking
 
 ```
