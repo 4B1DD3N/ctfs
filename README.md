@@ -300,3 +300,20 @@ Decompile python bytecode (.pyc). https://github.com/Mysterie/uncompyle2
 ```
 uncompyle6 crackme3.pyc
 ```
+
+### Forensics
+
+#### Memory dumps
+```
+volatility -f dump.elf imageinfo
+```
+
+```
+volatility -f dump.elf --profile=WINXPSP2x86 hashdump
+```
+
+### Cracking
+
+```
+./john hash.txt --wordlist=dict.txt --format=NT
+```
