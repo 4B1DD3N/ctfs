@@ -329,7 +329,7 @@ Dump a process by PID (408).
 volatility -f dump2.elf --profile=WinXPSP2x86 memdump -D . -p 408
 ```
 
-Get the hostname (computername).
+Get the hostname (computername). (https://www.aldeid.com/wiki/Volatility/Retrieve-hostname)
 ```
 volatility -f ch2.dmp --profile=Win7SP0x86 envars | grep COMPUTERNAME
 ```
