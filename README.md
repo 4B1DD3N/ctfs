@@ -6,6 +6,11 @@
 
 ## CTF TOOLS #
 
+Extract file within some dump.
+```
+binwalk -e dump
+```
+
 ### Linux tricks
 
 Redirect stdout to null (also the default, so >/dev/null is also to stdout)
