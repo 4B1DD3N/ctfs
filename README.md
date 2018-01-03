@@ -6,7 +6,7 @@
 
 ## CTF TOOLS #
 
-Extract file within some dump.
+Extract files within some dump.
 ```
 binwalk -e dump
 ```
